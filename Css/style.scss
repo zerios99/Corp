@@ -1,0 +1,606 @@
+
+   /* main colors */
+
+   body{
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   }
+   $firstColor: #08526d;
+   $secondColor: #ec1c23;
+
+
+   /* start upper par */
+
+   .upper-bar{
+      background-color: $firstColor;
+      color: white;
+   }
+   .upper-bar .info{
+      margin: 15px 0;
+   }
+   @media (max-width: 576px) {
+      .upper-bar .info:first-child{
+         margin-bottom: 0;
+      }
+   }
+   .upper-bar .QU{
+      background-color: $firstColor;
+      color: white;
+      border: 1px solid $secondColor;
+      margin-left: 10px;
+   }
+   .upper-bar .QU:hover{
+      background-color: $secondColor;
+   }
+
+  /* start uper par */
+
+  /* start navBar */
+
+  .navbar-brand span{
+     font-size: 40px;
+  }
+  .navbar-brand span:first-child{
+     color: $firstColor;
+     font-weight: bold;
+  }
+  .navbar-brand span:last-child{
+   color: $secondColor;
+}
+.navbar-light .navbar-nav .nav-link{
+   font-size: 20px;
+   text-transform: uppercase;
+   margin-left: 16px;
+   color: $firstColor;
+   font-weight: 500;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+   color: $secondColor;
+}
+.navbar-light .navbar-nav .active>.nav-link{
+   color: $secondColor;
+}
+
+  /* end navBar */
+
+  /* start slider */
+
+  .slider{
+     background-color: #ddd;
+  }
+  .slider .carousel-inner{
+     display: flex;
+     align-items: center;
+  }
+  .slider .carousel-inner h1{
+   color: white;
+   z-index: 3;
+   font-size: 50px;
+   position: absolute;
+   line-height: 70px;
+   max-width: 470px;
+   left: 115px;
+  }
+  @media (max-width: 768px) {
+   .slider .carousel-inner h1{
+      font-size: 30px;
+      left: 25px;
+      line-height: 50px;
+   }
+}
+  .slider .carousel-inner h1 span{
+   background-color: $secondColor;
+   display: inline-block;
+   line-height: 67px;
+   overflow: hidden;
+   padding-right: 7px;
+  }
+  @media (max-width: 768px) {
+   .slider .carousel-inner h1 span{
+      line-height: 30px;
+   }
+  }
+  .slider .carousel-inner .overlay{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   left: 0;
+   top: 0;
+   z-index: 2;
+}
+  .slider .carousel-item{
+     background-size: cover;
+}
+  .slider .carusal-one{
+   background-image: url("../Img/keyboard\ backlight\ red.jpg");
+}
+  .slider .carusal-two{
+   background-image: url("../Img/laptop\ screen\ desktop.jpg");
+}
+  .slider .carusal-three{
+   background-image: url("../Img/photographer_hands_camera_118094_1280x720.jpg");
+}
+
+  /* end slider */
+
+  /* start featchers */
+
+  .features{
+     padding-top: 60px;
+     padding-bottom: 50px;
+  }
+  .features i{
+     background-color: $secondColor;
+     border-radius: 50%;
+     color: white;
+     width: 80px;
+     height: 80px;
+     line-height: 80px;
+     margin-bottom: 15px;
+  }
+  .features h3{
+     color: $firstColor;
+  }
+  .features .lead{
+     font-size: 15px;
+  }
+
+  /* end featchers */
+
+  /* start compony */
+
+  .compony{
+     padding-bottom: 50px;
+     padding-top: 50px;
+     background-color: #f0f5f7;
+  }
+  .compony h2{
+     font-weight: bold;
+     margin-bottom: 30px;
+     font-size: 50px;
+     text-transform: uppercase;
+  }
+  .compony .head{
+     width: 70%;
+     margin: auto;
+     margin-bottom: 20px;
+  }
+  @media (max-width: 576px){
+   .compony .head{
+      font-size: 16px;
+   }
+  }
+  .compony .haedo{
+     letter-spacing: 5px;
+     margin-bottom: 30px;
+  }
+  .compony .btn{
+     background-color: $secondColor;
+     color: white;
+     border: none;
+     padding: 10px 25px;
+     border-radius: 0;
+     font-size: 20px;
+  }
+  .compony .btn:hover{
+     background-color: $firstColor;
+  }
+
+  /* end compony */
+
+  /* start featchares work */
+
+  .featchares-work {
+     padding-top: 50px;
+     padding-bottom: 50px;
+  }
+  .featchares-work h2{
+   font-weight: bold;
+   margin-bottom: 30px;
+   font-size: 50px;
+}
+  .featchares-work p{
+     width: 70%;
+     margin: auto;
+     margin-top: 30px;
+     margin-bottom: 40px;
+  }
+  .featchares-work ul li{
+     border: 1px solid $firstColor;
+     color: $firstColor;
+     background-color: white;
+     cursor: pointer;
+     padding: 5px;
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: all .3s ease-in-out;
+  }
+  .featchares-work ul li.active,
+  .featchares-work ul li:hover{
+   color: white;
+   background-color: $secondColor;
+   border: 1px solid $secondColor;
+  }
+  .shuffle-imges{
+     margin-top: 40px;
+  }
+  .featchares-work .shuffle-imges .row{
+     margin: 0;
+  }
+  .featchares-work ul{
+     margin: auto;
+  }
+  .featchares-work .shuffle-imges .row .shu{
+     padding: 0;
+     transition: all .5s ease-in-out;
+  }
+  .featchares-work .row img{
+     width: 100%;
+  }
+   /* end featchares work */
+
+   /* start latest post */
+
+   .intro{
+      padding-top: 50px;
+      padding-bottom: 50px;
+   }
+   .intro h2{
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 50px;
+ }
+   .intro p{
+      width: 70%;
+      margin: auto;
+      margin-top: 30px;
+      margin-bottom: 40px;
+   }
+   .card{
+      border: 1px solid white;
+      margin-bottom: 30px;
+   }
+   .card-body h4{
+      color: $firstColor;
+   }
+   .card-body a{
+      color: $secondColor;
+      font-weight: bold;
+   }
+   .card-body p{
+      font-size: 1.115rem;
+      font-weight: 300;
+   }
+
+   /* end latest post */
+
+   /* statr testimonails */
+
+   .testimonials{
+      background-size: cover;
+      background-image: url("../Img/smile\ inscription\ hand\ hello.jpg");
+      position: relative;
+   }
+   .carousel-caption{
+      bottom: 80px;
+   }
+   .testimonials .overlay{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: 2;
+   }
+   .testimonials .container{
+      position: relative;
+      z-index: 3;
+   }
+   .testimonials .carousel-inner .carousel-caption img{
+      border-radius: 50%;
+      margin-bottom: 30px;
+      width: 150px;
+   }
+   @media (max-width: 576px){
+      .testimonials .carousel-inner .carousel-caption img{
+         width: 100px;
+      }
+   }
+   .testimonials .carousel-inner .carousel-caption h3{
+      margin-bottom: 10px;
+      font-weight: bold;
+   }
+   @media (max-width: 576px){
+      .testimonials .carousel-inner .carousel-caption h3{
+         margin-bottom: 5px;
+      }
+   }
+   .testimonials .carousel-inner .carousel-caption span{
+      font-size: 18px;
+      display: inline-block;
+      margin-bottom: 30px;
+      font-weight: bold;
+   }
+   @media (max-width: 576px){
+      .testimonials .carousel-inner .carousel-caption span{
+         margin-bottom: 5px;
+      }
+      .testimonials .carousel-inner .carousel-caption p{
+         font-size: 14px;
+      }
+   }
+   .testimonials a{
+      z-index: 9999;
+   }
+   .testimonials a span.active{
+      background-color: $secondColor;
+      width: 50px;
+      height: 50px;
+   }
+   .testimonials a span{
+      background-color: $firstColor;
+      width: 50px;
+      height: 50px;
+   }
+
+   /* end testimonails */
+
+   /* start price table */
+
+   .price{
+      padding-top: 20px;
+   }
+   .intro{
+      padding-top: 50px;
+      padding-bottom: 50px;
+   }
+   .intro h2{
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 50px;
+ }
+   .intro p{
+      width: 70%;
+      margin: auto;
+      margin-top: 30px;
+      margin-bottom: 40px;
+   }
+   .price .card{
+      
+      margin-bottom: 30px;
+   }
+   .price .card-body{
+      border: 1px solid rgb(197, 197, 197);
+      padding: 13px 0px;
+      position: relative;
+   }
+   .price .card-body h4{
+      color: $firstColor;
+      margin-top: 30px;
+   }
+   .price .card-body a{
+      color: $secondColor;
+      font-weight: bold;
+   }
+   .price .card-body:hover{
+      transform: scale(1.05, 1.05);
+      transition: all .5s ease-in-out;
+   }
+   .price .card-body p{
+      font-size: 2.115rem;
+      background-color: #f0f5f7;
+      color: $firstColor;
+      font-weight: 300;
+      margin-bottom: 20px;
+   }
+   .price .card-body p.active{
+      background-color: $secondColor;
+      color: white;
+      margin-bottom: 20px;
+   }
+   .price .card-body p span{
+      font-size: 15px;
+   }
+   .price .card-body .one{
+      margin-bottom: 35px;
+   }
+   .price .card-body ul li{
+      padding-bottom: 15px;
+   }
+   .price .card-body .btn{
+      color: white;
+      background-color: $secondColor;
+      border: 1px solid white;
+      border-radius: 0;
+      margin-bottom: 30px;
+      padding: 8px 30px;
+   }
+   .price .card-body .btn.active{
+      color: white;
+      background-color: $firstColor;
+      border: 1px solid white;
+      border-radius: 0;
+   }
+
+   /* end price table */
+
+   /* start why Choose Us */
+
+   .choose-us{
+      padding-top: 50px;
+      padding-bottom: 50px;
+   }
+   .choose-us .img{
+      padding: 0;
+   }
+   .choose-us .row{
+      margin-left: 0;
+      margin-right: 0;
+   }
+   .choose-us img{
+      width: 100%;
+      height: 100%;
+   }
+   .choose-us .Why{
+      background-color: $firstColor;
+      padding-top: 90px;
+      color: white;
+      padding-left: 40px;
+   }
+   .choose-us .Why h2{
+      font-weight: bold;
+      padding-bottom: 20px;
+      color: white;
+   }
+   .choose-us .Why button{
+      background-color: #ec1c23;
+      border-radius: 0;
+      border: 1px solid #ec1c23;
+      padding: 7px 25px;
+      letter-spacing: 2px;
+      margin-top: 20px;
+      margin-bottom: 15px;
+   }
+
+   /* end why Choose Us */
+
+   /* start statistics */
+
+   .statistics{
+      padding-top: 50px;
+      padding-bottom: 50px;
+   }
+   .statistics .row .box{
+      margin-bottom: 20px;
+   }
+   .statistics .row i, h2{
+      color: $firstColor;
+   }
+   .statistics .row h2{
+      margin-bottom: 0.1rem;
+   }
+   .statistics .row i{
+      margin-bottom: 10px;
+   }
+   .statistics .row p{
+      color: $secondColor;
+      font-size: 1.115rem;
+      font-weight: 400;
+   }
+
+   /* end statistics */
+
+   /* start contact us */
+
+   .contact{
+      background-color: $secondColor;
+      padding-bottom: 40px;
+      color: white;
+      padding-top: 50px;
+   }
+   .contact .row .btn{
+      background-color: $secondColor;
+      border: 1px solid white;
+      border-radius: 0;
+      letter-spacing: 3px;
+   }
+
+   /* start contact us */
+
+   /* start footer */
+
+   .footer{
+      padding-top: 60px;
+   }
+   .footer h2 span{
+      color: $secondColor;
+      font-weight: 200;
+   }
+   .footer h2{
+      margin-bottom: 30px;
+   }
+   .footer .btn{
+      background-color: white;
+      color: $firstColor;
+      border: none;
+      padding: 0;
+      margin-top: 15px;
+      margin-bottom: 25px;
+   }
+   .footer h4{
+      color: $firstColor;
+      margin-bottom: 30px;
+      margin-top: 15px;
+   }
+   @media (max-width: 576px) {
+      .footer h4{
+         margin-top: 50px;
+      }
+   }
+   .footer .corp{
+      margin-bottom: 0;
+   }
+   .footer p{
+      margin-bottom: 35px;
+      font-size: 1.1rem;
+   }
+   .footer .coloms-left li{
+      width: 49.3333%;
+      float: left;
+      padding: 7px 0;
+      font-weight: bold;
+      color: $firstColor;
+      font-weight: 400;
+   }
+   .footer .coloms-left li a{
+      text-decoration: none;
+      color: $firstColor;
+   }
+   .footer p a{
+      text-decoration: none;
+      color: $firstColor;
+   }
+   .footer .down{
+      margin-bottom: 120px;
+      margin-top: 90px;
+   }
+   @media (max-width: 576px) {
+      .footer .down{
+         margin-bottom: 0;
+      }
+   }
+   .footer .socal i{
+      padding-left: 15px;
+      margin-top: 10px;
+      color: $firstColor;
+   }
+   .footer .socal i:hover{
+      color: $secondColor;
+   }
+   .footer .cs{
+      margin-top: 10px;
+   }
+
+   /* end footer */
+
+   /* start scroll to top */
+
+.go-top {
+   bottom: 1em;
+   right: 1em;
+   color: white;
+   background-color: $secondColor;
+   font-size: 32px;
+   display: none;
+   position: fixed;
+   text-decoration: none;
+   border-radius: 30%;
+   width: 60px;
+   height: 60px;
+   line-height: 55px;
+   text-align: center;
+   -webkit-transition: all 0.4s ease-in-out;
+   transition: all 0.4s ease-in-out;
+ }
+
+/* end scroll to top */
